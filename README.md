@@ -15,6 +15,6 @@ Features:
   JavaScript: Interactivity and dynamic behavior implementations
 
 Project Structure:
-| battleship_website.html
-| battleship_styling.css
-| battleship_BE.js
+  > battleship_website.html
+  > battleship_styling.css
+  > battleship_BE.js
