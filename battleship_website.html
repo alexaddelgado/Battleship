@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="battleship_styling.css">
+</head>
+<body>
+    <div id="title-container">
+        <h1 id="website_title"> BATTLESHIP </h1>
+    </div>
+
+    <div id="instruction-container">
+
+        <h4 class="instructions">
+            Battleship is a game based on luck and strategy where the player has to sink all of their opponent's ships before their opponent sinks their own.
+        </h4>
+        <h4 class="instructions">
+            The rules for this game are:
+        </h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Place your ships in their desired locations without overlapping any of them.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Press start when you are ready to play.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Select a block in the opponent's grid to attack. If you get a hit or miss, the information display in between the boards will let you know.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Wait for the opponent to attack. Turn will be indicated in between the two boards.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. First player to sink all of the opposing side's ships will win!</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. To play again, select "New Game".</p>
+        
+        </h4>
+        <h4 class="instructions">
+            Note: When a ship is sunk, its location will turn black.
+        </h4>
+    
+    </div>
+
+    <div id="boards-container">
+
+        <div id="player-container">
+
+            <h2 class="board-title"> Player </h2>
+
+            <div id="player-board">
+                <div id="ship-layer">
+                    <div id="destroyer-preview"></div>
+                    <div id="cruiser-preview"></div>
+                    <div id="submarine-preview"></div>
+                    <div id="battleship-preview"></div>
+                    <div id="carrier-preview"></div>
+                </div>
+                <div id="board-layer">
+                    <canvas id="playerGrid" width="350" height="350"></canvas>
+                </div>
+            </div>
+
+            <h3>Hits: <span id="p_hit"></span></h3>
+            <h3>Misses: <span id="p_miss"></span></h3>
+
+        </div>
+
+        <div id="game-info">
+            <h3>Turn: <span id="turn_display"></span></h3>
+            <h3>Info: <span id="info_display"></span></h3>
+            <div id="game-Buttons">
+                <button id="startButton">Start</button>
+                <button id="newButton">New Game</button>
+            </div>
+            <div id="status-container">
+                <div id="pship_status">
+                    <h4>Player Ship Status</h4>
+                    <p>Destroyer: <br><span id="destroyer_display"></span></p>
+                    <p>Cruiser: <br><span id="cruiser_display"></span></p>
+                    <p>Submarine: <br><span id="submarine_display"></span></p>
+                    <p>Battleship: <br><span id="battleship_display"></span></p>
+                    <p>Carrier: <br><span id="carrier_display"></span></p>
+                </div>
+                <div id="oship_status">
+                    <h4>Opponent Ship Status</h4>
+                    <p>Destroyer: <br><span id="edestroyer_display"></span></p>
+                    <p>Cruiser: <br><span id="ecruiser_display"></span></p>
+                    <p>Submarine: <br><span id="esubmarine_display"></span></p>
+                    <p>Battleship: <br><span id="ebattleship_display"></span></p>
+                    <p>Carrier: <br><span id="ecarrier_display"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="enemy-container">
+
+            <h2 class="board-title"> Opponent </h2>
+
+            <div id="enemy-board">
+                <canvas id="enemyGrid" width="350" height="350"></canvas>
+            </div>
+
+            <h3>Hits: <span id="e_hit"></span></h3>
+            <h3>Misses: <span id="e_miss"></span></h3>
+
+        </div>
+
+    </div>
+
+    <script src="battleship_BE.js"></script>
+
+</body>
+</html>
