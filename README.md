@@ -10,11 +10,11 @@ Installation and Usage:
   4. Open the battleship_website.html file located in the project directory using your web browser.
 
 Features:
-  HTML: Defines the structure of the web page
-  CSS: Used for styling and layout
-  JavaScript: Interactivity and dynamic behavior implementations
+<br>  HTML: Defines the structure of the web page
+<br>  CSS: Used for styling and layout
+<br>  JavaScript: Interactivity and dynamic behavior implementations
 
 Project Structure:
-  battleship_website.html
-  battleship_styling.css
-  battleship_BE.js
+<br>  battleship_website.html
+<br>  battleship_styling.css
+<br>  battleship_BE.js
