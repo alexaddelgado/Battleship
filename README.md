@@ -1,7 +1,7 @@
 Project Name: LocalHost HTML/CSS/JavaScript Project
 
 Overview:
-This locally-hosted project utilizes HTML, CSS, and JavaScript to implement the turn-based game Battleship where the player goes against AI.
+This locally-hosted project utilizes HTML, CSS, and JavaScript to implement the turn-based game Battleship in which the player goes against AI.
 
 Installation and Usage:
   1. Clone or download the project repository from GitHub link.
