@@ -1,4 +1,4 @@
-Project Name: LocalHost HTML/CSS/JavaScript Project
+Project Name: Battleship
 
 Overview:
 This locally-hosted project utilizes HTML, CSS, and JavaScript to implement the turn-based game Battleship in which the player goes against AI.
